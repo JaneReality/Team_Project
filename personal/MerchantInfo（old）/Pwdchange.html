@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改密码--百药食坊</title>
+	<link type="text/css" rel="stylesheet" href="MerchantInfo.css" />
+	</head>
+	<body>
+	<script type="text/javascript">
+		$("#reset").click(function(e){
+        $("input").val("");
+      });
+	</script>
+		<div id="top">
+			<table class="top_title"> 
+		     	<tr>
+	    	        <th><h1>商家信息</h1></th>	
+					<th><a class="change" href="Infochange.html">修改信息</a></th>
+					<th><a class="***" href="*">推出药膳</a></th>
+					<th><a class="add" href="*">添加药材</a></th>
+					<th><a class="out" href="login.html">退出登录</a></th>
+				</tr>
+			</table>
+		</div>
+		<center>
+		<div id="title">
+			<a class="b" href="MerchantInfo.html">基本资料</a>
+			<a class="c" href="">密码管理</a>
+			<hr />	
+		</div>
+		</center>
+		<form method="post">
+		<div id="chpwd">
+			<b>原始密码：</b>
+			<input id="businessPassword" type="text" name="businessPassword" />
+			<br />
+			<br />
+			<b>新的密码：</b>
+			<input id="new_businessPassword" type="text" name="new_businessPassword" />
+			<br />
+			<br />
+			<b>确认密码：</b>
+			<input id="businessPassword" type="businessPassword" name=""/>
+			<br />
+			<button class="sub1" id="submit" name="Submit">提交</button>
+			<button class="sub1" id="reset" name="Submit2">重置</button>
+			</form>
+		</div>
+	</body>
+</html>

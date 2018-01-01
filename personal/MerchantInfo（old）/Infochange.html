@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改信息--百药食坊</title>
+	    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>			
+		<link type="text/css" rel="stylesheet" href="MerchantInfo.css" />
+	</head>
+	<body>
+	<script type="text/javascript">
+		$("#reset1").click(function(e){
+        $("input").val("");
+      });
+	</script>
+		<div id="top">
+	    	<table class="top_title"> 
+		     	<tr>
+	    	        <th><h1>商家信息</h1></th>	
+					<th><a class="change" href="Infochange.html">修改信息</a></th>
+					<th><a class="***" href="*">推出药膳</a></th>
+					<th><a class="add" href="*">添加药材</a></th>
+					<th><a class="out" href="login.html">退出登录</a></th>
+				</tr>
+			</table>
+		</div>
+		<center>
+		<div id="title">
+			<a class="b" href="MerchantInfo.html">基本资料</a>
+			<a class="c" href="Pwdchange.html">密码管理</a>
+			<hr />	
+		</div></center>
+		<div id="change_info">
+			<form action="*"method="post">
+			<b>商家ID：</b>
+			<input type="text" name="account" id="account" value="" />
+			<br />
+			<br />
+			<b>商家名：</b>
+			<input type="text" name="name" id="name" value="" />
+			<br />
+			<br />
+			<b>店铺名：</b>
+			<input type="number" name="storeName" id="storeName" value="" />
+			<br />
+			<br />
+			<b>地   址：</b>
+			<input type="number" name="address" id="address" value="" />
+			<br />
+			<br />
+			<b>联系电话：</b>
+			<input type="text" name=" tel" id=" tel" value="" />
+			<br />
+			<br />
+			<b>联系邮箱：</b>
+			<input type="email" name="mail" id="mail" value="" />
+			<br />
+			<br />
+			<button class="sub" id="submit" name="Submit">提交</button>
+			<button class="sub" id="reset1" name="Submit2">重置</button>
+			</form>
+		</div>
+	</body>
+</html>
