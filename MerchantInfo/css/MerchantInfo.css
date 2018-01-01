@@ -1,0 +1,139 @@
+body{
+	overflow-x: hidden;
+	width: 100%;    
+    height: 100%;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 780px;
+}
+#top{
+	/*background: url(../img/skyblue.jpg);*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-left: 200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.change{
+	font-size: 20px;
+	padding-left: 30px;
+}
+
+#div1{
+	padding-left: 30%;
+	/*margin-top: 30px;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color:#EFBF00;b
+	height: 60px;
+	width: 1300px;
+	margin-bottom: 20px;
+	margin-left: -10px;
+}
+b{
+	width: 100px;
+}
+.btn {
+	background-color:#EFBF00;
+	height: 55px;
+	font-size: 25px ;
+	border: 0px ;
+	padding: 10px;
+	border-color: yellow;
+}
+button{
+	background-color:#EFBF00;
+	width:30px;
+	height:40px;
+	border:none;
+	border-radius:3px;
+	color:#FFF;
+	font-size:10px;
+}
+#div2{
+	margin-top: 30px;
+	width: 50%;
+	height: 100%;
+	padding-left: 40%;
+	font-size: 20px;
+	display: block;
+}
+a{
+	color: black;
+	border: none;
+	text-decoration: none;
+}
+.noboder{
+
+	border: none;
+	height: 30px;
+	width: 300px;
+}
+#div3{
+    display: none;
+	text-align: right;
+	width: 60%;
+	height: 80%;
+	font-size: 20px;
+}
+#div4{
+	display: none;
+	width: 50%;
+	height: 80%;
+	padding-left: 37%;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+#div5{
+    display: none;
+	text-align: right;
+	margin-left: 250px;	
+	width: 60%;
+	height: 80%;
+	font-size: 20px;
+}
+#div5 .form1{
+	float: left;
+	padding-left: 5%;
+}
+#div5 .form2{
+	margin-right: -2%;
+	float: right;
+}
+#div6{
+    display: none;
+	text-align: right;
+	margin-left: 250px;
+	width: 60%;
+	height: 80%;
+	font-size: 20px;
+}
+#div6 .form1{
+	float: left;
+	padding-left: 5%;
+}
+#div6 .form2{
+	margin-right: -2%;
+	float: right;
+}
+.sub{
+	margin-right: 55px;
+	margin-top: 10px;
+	width: 70px;
+	padding: 5px;
+	font-size: 20px;
+}
+.sub1{
+	margin-left: 58px;
+	margin-top: 10px;
+	width: 80px;
+	padding: 5px;
+	font-size: 20px;
+}
+.ipt{
+	width: 200px;
+	height: 15px;
+	padding: 10px;
+	font-size: 15px;
+}

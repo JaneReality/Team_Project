@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/MerchantInfo.css" />
+		<script type="text/javascript" src="MerchantInfo.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			<h1>商家中心</h>	
+		</div>
+		
+		<div id="div1">
+					<table class="button1">
+						<tr>
+							<td>
+							<a class="btn" href="" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+								onclick="">网站首页</a>
+							</td>
+							<td>
+							<input class="btn" type="button" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+								onclick="userInfo()" value="基本资料" />
+							</td>
+							<td>
+							<input class="btn" type="button" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+							onclick="infoChange()" value="信息修改" />
+							</td>
+							<td>
+							<input class="btn" type="button" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+								onclick="pwdChange()" value="密码修改" />
+							</td>	
+							<td>
+							<input class="btn" type="button" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+							onclick="MedDiet()" value="推出药膳" />
+							</td>
+							<td>
+							<input class="btn" type="button" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''" 
+								onclick="MedMater()" value="添加药材" />
+							</td>						
+							<td>							
+							<td>
+							<a class="btn" href="" onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''">退出登录</a>
+							</td>
+						</tr>
+					</table>
+						</div>
+					<div id="div2">	
+                                   <!--描述：信息展示-->
+						<b class="p">商家ID：</b>
+						<input class="noboder" type="text" name=a readonly id="account" value="" />
+						<br />
+						<br />
+						<b class="p">商家名：</b>
+						<input class="noboder" type="text" name=a readonly id="name" value="" />
+						<br />
+						<br />
+						<b class="p">店铺名：</b>
+						<input class="noboder" type="text" name=a readonly id="StoreName" value=""  />
+						<br />
+						<br />
+						<b class="p">地&nbsp&nbsp&nbsp址：</b>
+						<input class="noboder" type="text" name=a readonly id="address" value=""  />
+						<br />
+						<br />
+						<b class="p">联系电话：</b>
+						<input class="noboder" type="text" name=a readonly id="tel" value=""  />
+						<br />
+						<br />						
+						<b class="p">联系邮箱：</b>
+						<input class="noboder" type="text" name=a readonly id="mail" value="" />
+					</div>
+					
+					<div id="div3">   
+                                      <!--描述：信息修改 -->
+						<form method="post" >
+						<b>商家名：</b>
+						<input class="ipt" type="text" name="name" id="name" value="" />
+						<form:errors path="nameError" />
+						<br />
+						<br />
+						<b>店铺名：</b>
+						<input class="ipt" type="text" name="actulName" id="StoreName" value="" />
+						<form:errors path="actulNameError" />
+						<br />
+						<br />
+						<b>地址：</b>
+						<input class="ipt" type="number" name="birthday" id="birthday" value="" />
+						<form:errors path="birthdayError" />
+						<br />
+						<br />
+						<b>联系电话：</b>
+						<input class="ipt" type="number" name="tel" id="tel" value="" errors path="tel" />
+						<form:errors path="telError" />
+						<br />
+						<br />
+						<b>联系邮箱：</b>
+						<input class="ipt" type="email" name="mail" id="mail" value="" errors path="mail" />
+						<form:errors path="mailError" />
+						<br />
+						<br />
+						<button class="sub" type="submit" name="Submit">提交</button>
+						<button class="sub" type="reset" name="Submit2">重置</button>
+						</form>
+					</div>
+					
+					<div id="div4">
+                                   <!-- 描述：密码修改-->
+						<form method="post">
+						<b>原始密码：</b>
+						<input class="ipt" type="text" name="" id="" />
+						<br />
+						<br />
+						<b>新的密码：</b>
+						<input class="ipt" type="password" name="newuserPassword" id="newuserPassword" value="" />
+						<br />
+						<br />
+						<b>确认密码：</b>
+						<input class="ipt" type="password" name="newuserPassword" id="newuserPassword" value="" />
+						<br />
+						<button class="sub1" type="submit" name="Submit">提交</button>
+						<button class="sub1" type="reset" name="Submit2">重置</button>			
+						</form>
+					</div>
+					<div id="div5">	
+                                   <!--描述：药膳信息-->
+                       <div class="form1">    
+						<form method="post" >
+	  						<b >药膳ID：</b>
+							<input class="noboder" type="text" name=a readonly id="account" value="" />
+							<br />
+							<br />
+							<b >药膳名：</b>
+							<input class="noboder" type="text" name=a readonly id="name" value="" />
+							<br />
+							<br />
+							<b >所属类别：</b>
+							<input class="noboder" type="text" name=a readonly id="type" value=""  />
+							<br />
+							<br />
+							<b >药材名：</b>
+							<input class="noboder" type="text" name=a readonly id="name" value="" />
+							<br />
+							<br />
+							<b >说&nbsp&nbsp&nbsp明：</b>
+							<input class="noboder" type="text" name=a readonly id="description " value=""  />
+							<br />
+							<br />
+						</form>
+						</div>
+					    <div class="form2"> 
+						   <form method="post">  
+							<b >疗效 ：</b>
+							<input class="noboder" type="text" name=a readonly id="curativeEffect" value=""  />
+							<br />
+							<br />						
+							<b >原料 ：</b>
+							<input class="noboder" type="text" name=a readonly id="material" value="" />
+							<br />    
+							<br />
+							<b >做法 ：</b>
+							<input class="noboder" type="text" name=a readonly id="makeMethod" value=""  />
+							<br />
+							<br />
+							<b >注意事项：</b>
+							<input class="noboder" type="text" name=a readonly id="attention" value=""  />
+							<br />
+							<br />
+							<b >用法用量：</b>
+							<input class="noboder" type="text" name=a readonly id="dosage" value=""  />
+							<br />
+							<br />						
+							<b >出处：</b>
+							<input class="noboder" type="text" name=a readonly id="reference" value="" />
+						   </form>
+						</div>
+					</div>
+					<div id="div6">	
+                        <div class="form1">           <!--描述：信息展示-->
+	                        <form method="post" >
+								<b >药材ID：</b>
+								<input class="noboder" type="text" name=a readonly id="account" value="" />
+								<br />
+								<br />
+								<b >药材名：</b>
+								<input class="noboder" type="text" name=a readonly id="name" value="" />
+								<br />
+								<br />
+								<b >药材类别：</b>
+								<input class="noboder" type="text" name=a readonly id="StoreName" value=""  />
+								<br />
+								<br />
+								<b >药效：</b>
+								<input class="noboder" type="text" name=a readonly id="efficacy" value=""  />
+								<br />
+								<br />
+								<b >应用：</b>
+								<input class="noboder" type="text" name=a readonly id="apply" value=""  />
+								<br />
+								<br />
+							</form>
+						</div>
+						 <div class="form2">  
+							<form method="post" >
+								<b >产地：</b>
+								<input class="noboder" type="text" name=a readonly id="originPlace" value=""  />
+								<br />
+								<br />
+								<b >来源部位：</b>
+								<input class="noboder" type="text" name=a readonly id="sourcePart" value=""  />
+								<br />
+								<br />
+								<b >药性：</b>
+								<input class="noboder" type="text" name=a readonly id="property" value=""  />
+								<br />
+								<br />
+								<b >鉴别方法：</b>
+								<input class="noboder" type="text" name=a readonly id="distinguish" value=""  />
+								<br />
+								<br />
+								<b >使用注意：</b>
+								<input class="noboder" type="text" name=a readonly id="usedAttention" value=""  />
+								<br />
+								<br />
+								<b >单价：</b>
+								<input class="noboder" type="text" name=a readonly id="price" value=""  />	
+							</form>	
+						</div>				
+					</div>
+				</tr>
+			</table>
+		
+	</body>
+</html>
