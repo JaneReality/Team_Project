@@ -1,0 +1,43 @@
+body{    
+    width: 100%;    
+    height: 100%;    
+    font-family: 'Open Sans',sans-serif;    
+    margin: 0;    
+    background-image: url(background-img.jpg);
+    background-size: 100% 120%;  
+} 
+h1{   
+    font-size: 2em;    
+    margin: 1em 0;  
+    padding-top: 2em;   
+} 
+h1,h2{  
+    color: black    
+    text-shadow:0 0 10px;    
+    letter-spacing: 1px;    
+    text-align: center;      
+}
+#merchant{
+	border-style:solid;   
+   width: 20em;
+   height: 23em;
+   margin: 2em auto;
+}
+#merchant p{
+	font-size: 1em;
+	font-weight: bold;
+	padding-left: 0.8em;
+
+}
+form{
+	margin-left: 2em;
+}
+form span{
+	display:inline-block;
+	text-align: right;
+	width:4em;
+	padding-bottom: 0.8em;
+}
+form button{
+	margin: 1em 0 0 7.3em;
+}
