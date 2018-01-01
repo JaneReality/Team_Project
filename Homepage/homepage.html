@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+		<div style="height: 67px;">
+			<span class="title">百药食坊</span>
+		</div>
+		<div align="center">
+			<div id="div1">
+				<div style="position: relative;">
+					<input id="button_enter" class="button1" type="button" value="登录" style="color:#C28F4D" onclick="enter_onclick()">
+					<input id="button_login" class="button1" type="button" value="注册" style="color: black;" onclick="login_onclick()">
+				</div>
+				<div class="line"></div>
+
+				<form id="user_login" style="display: none;">
+					<input  name="账户名" id="user_account" class="input1" type="text" placeholder="账户名" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)">
+					<div class="sex">
+						<span>性别:</span>
+						<input type="radio" name="sex" value="Male"> 男
+						<input type="radio" name="sex" value="Female"> 女
+					</div>
+					<input name="邮箱/手机号" id="user_email" class="input1" type="text" placeholder="邮箱/手机号" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name);">
+					<input  name="密码1" id="user_psd" class="input1" type="password" placeholder="密码" onfocus="password_onfocus(this.name)">
+					<input  name="确认密码1" id="user_psd1" class="input1" type="password" placeholder="确认密码" onfocus="password_onfocus(this.name)">
+					<input  name="验证码" id="user_code" class="securitycode" type="text" placeholder="验证码" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)"><input value="获取验证码" class="securitycode_made" type="button"><br>
+					<input value="同意协议并注册" name="同意协议并注册" class="agreement" type="radio"><span class="agreement">同意协议并注册</span><br>
+					<input value="注册" type="submit" id="us_login"class="button2">
+				</form>
+
+				<form id="merchant_login" style="display: none">
+					<input  name="账户名" id="mer_account" class="input1" type="text" placeholder="账户名" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)">
+					<input  name="店名" id="mer_store" class="input1" type="text" placeholder="店名" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)">
+					<input  name="邮箱/手机号" id="mer_user_email" class="input1" type="text" placeholder="邮箱/手机号" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name);">
+					<input name="密码3" id="mer_psd" class="input1" type="password" placeholder="密码" onfocus="password_onfocus(this.name)">
+					<input  name="确认密码3" id="mer_psd3" class="input1" type="text" placeholder="确认密码" onfocus="password_onfocus(this.name)">
+					<input  name="验证码" id="mer_code" class="securitycode" type="text" placeholder="验证码" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)"><input value="获取验证码" class="securitycode_made" type="button"><br>
+					
+					<input value="同意协议并注册" name="同意协议并注册" class="agreement" type="radio"><span class="agreement">同意协议并注册</span><br>
+					<input value="注册" type="submit" id="mer_login" class="button2">
+				</form>
+
+				<form id="enter" style="display: block;">
+					<input  name="账户名/邮箱/手机号" id="enter_account" class="input2" type="text" placeholder="账户名/邮箱/手机号" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)">
+					<input name="密码2" id="enter_psd" class="input2" type="password" placeholder="密码" onfocus="password_onfocus(this.name)">
+					<input  name="验证码" id="enter_code" class="securitycode" type="text" placeholder="验证码" onblur="text_onblur(this.name)" onfocus="text_onfocus(this.name)"><input value="获取验证码" class="securitycode_made" type="button"><br>
+					<input value="登录" type="submit" id="enter_button" class="button2" style="margin-top: 20px;" >
+				</form>	
+				<div>
+					<input id="button_merchant" class="button1" type="button" value="商家" style="color: black;" onclick="merchant_onclick()">
+					<input id="button_user" class="button1" type="button" value="用户" style="color:#C28F4D;" onclick="user_onclick()">
+				</div>
+				</form>
+			</div>
+</body>
+</html>
