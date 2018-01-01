@@ -1,0 +1,134 @@
+
+body {
+			/*background-image: url(img/background.jpg);*/
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 0 50px;
+			overflow: hidden;
+		}
+.title{
+	height: 52px;
+	background-color: #EFBF00;
+	margin:-8px;
+
+}
+span {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	padding-top:10px;
+	padding-left: 10%;
+	display: inline-block;
+
+}
+.search {
+	/*display: inline-block;*/
+	/*margin-left: 190px;*/
+	margin: 40px 50% 30px 40%;
+	border-color: #EFBF00;
+	width: 280px;
+	padding-left: 5px;
+	border-radius: 20px;
+	outline:none;
+}
+.frame{
+	width:1474px;
+	height: 100%;
+}
+div.left{
+	/*position: absolute;*/
+	margin-top: 60px;
+    float: left;
+    width: 430px;
+    height: 40%;
+    margin-left: 70px;
+}
+p,
+.image_under img {
+	margin-left: 40px;
+}
+
+.image img{
+	width: 120px;
+	height: 120px;
+}
+.image :nth-child(1){
+	margin-top: 40px ;
+  	margin-left: 40px;	
+	/*display: block;	*/
+	width: 245px;
+	height: 190px;
+}
+.image :nth-child(2){
+  	margin-left: 40px;	
+}
+.image_under img{
+	float: left;
+	width: 190px;
+	height: 140px;
+
+}
+.image_under a{
+	text-decoration: none;
+	color: black;
+	/*float: left;*/
+}
+.subtitle a{
+	text-decoration: none;
+	float: left;
+	color: black;
+}
+.info{
+	float: left;
+	position: relative;
+	width:400px;
+	height: 378px;
+	margin-left: -20px;
+	margin-top:70px;
+}
+.info .effect{
+	width: 400px;
+	height: 60px;
+	margin-top:40px;
+}
+.effect p{
+	/*float: left;*/
+	display: inline;
+	text-align: center;
+	width: 70px;
+	height: 30px;
+    border:solid 2px #EFBF00;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.text_info{
+	padding-top: 30px;
+}
+.right{
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin: 20px 1px 0 150px;
+}
+.right .user_icon{
+ border-radius:50%; 
+ overflow:hidden;
+ width: 100px;
+ height: 100px;
+ float: left;
+}
+.right h3,
+.right p{
+	margin-left: 130px;
+}
+.right img{
+	width: 140px;
+	height: 140px;
+}
+ .right h4{
+ 	width: 220px;
+ 	height: 10px;
+ 	text-align: center;
+ 	padding: 25px 30px;
+ 	margin: 40px 0 20px 0;
+ 	background-color: #EFBF00;
+ }
